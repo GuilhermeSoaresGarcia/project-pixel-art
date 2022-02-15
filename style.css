@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#title {
+  margin: 20px 0 20px 20px;
+}
+#color-palette {
+  margin-left: 20px;
+}
+
+.color {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  display: inline-block;
+  background-color: red;
+}
+
+.green {
+  display: inline-block;
+  background-color: green;
+}
+
+.blue {
+  display: inline-block;
+  background-color: blue;
+}
+
+.black {
+  display: inline-block;
+  background-color: black;
+}
