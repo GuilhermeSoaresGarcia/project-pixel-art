@@ -11,9 +11,12 @@ function createColorsOfPalette() {
   for (i = 0; i < arrayColors.length; i += 1) {
     color = document.createElement('div');
     palette.appendChild(color);
-    color.className = `color ${arrayColors[i]}`;    
-  }
-}
+    color.className = `color ${arrayColors[i]}`;
+    if (arrayColors[i] === 'black') {
+      color.className = `color ${arrayColors[i]} selected`;
+    };
+  };
+};
 createColorsOfPalette();
 
 function createPixelBoard() {
@@ -33,6 +36,6 @@ function createPixels() {
 }
 createPixels();
 
-function createSelectedClass (){
-  
+function createSelectedClass() {
+
 }
