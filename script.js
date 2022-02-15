@@ -32,10 +32,18 @@ function createPixels() {
     pixel = document.createElement('div');
     board.appendChild(pixel);
     pixel.className = 'pixel white';
-  }
-}
+  };
+};
 createPixels();
 
-function createSelectedClass() {
 
-}
+
+document.addEventListener('click', createSelectedClass);
+
+function createSelectedClass() {  
+  // if (event.target.className == )
+  console.log(event.target.className)
+};
+
+
+// createSelectedClass();

@@ -46,6 +46,10 @@
   display: inline-block;
   background-color: white}
 
+.selected {
+  border: 2px dotted white;
+}
+
 #pixel-board {
   width: 240px;
 }
