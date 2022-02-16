@@ -36,14 +36,43 @@ function createPixels() {
 };
 createPixels();
 
+function addRemoveSelected() {
+  color = document.getElementById('color-palette').childNodes;
+  document.addEventListener('click', function () {
 
-
-document.addEventListener('click', createSelectedClass);
-
-function createSelectedClass() {  
-  // if (event.target.className == )
-  console.log(event.target.className)
+    if (event.target.classList.contains('color')) {
+      for (i = 0; i < color.length; i += 1) {
+        if (color[i].classList.contains('selected')) {
+          color[i].classList.remove('selected');
+        };
+      };
+      if (!event.target.classList.contains('selected')) {
+        event.target.classList.toggle('selected');
+      };
+    };
+  }
+  );
 };
 
+addRemoveSelected()
 
-// createSelectedClass();
+function fillPixelWithSelectedColor() {
+  selectedColor = document.querySelector('.selected').classList[1]
+  pixel = document.querySelector('.pixel')
+
+  addEventListener('click', function () {
+    if (event.target.classList.contains('pixel')) {
+      if (event.target.classList[1] !== selectedColor) {
+        console.log(selectedColor)
+        event.target.classList.remove(event.target.classList[1]);
+        event.target.classList.add(selectedColor);
+      } else {
+        event.target.classList.remove(event.target.classList[1]);
+        event.target.classList.add('white');
+      }
+    };
+  }
+  );
+};
+fillPixelWithSelectedColor()
+

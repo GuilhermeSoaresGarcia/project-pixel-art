@@ -44,10 +44,11 @@
 
 .white {
   display: inline-block;
-  background-color: white}
+  background-color: white
+}
 
 .selected {
-  border: 2px dotted white;
+  box-shadow:  0px 0px 5px 2px white inset;
 }
 
 #pixel-board {
