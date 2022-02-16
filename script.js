@@ -26,7 +26,7 @@ function createPixelBoard() {
 }
 createPixelBoard();
 
-function createPixels() {
+function createPixelsOfBoard() {
   board = document.getElementById('pixel-board');
   for (i = 0; i < 25; i += 1) {
     pixel = document.createElement('div');
@@ -34,9 +34,9 @@ function createPixels() {
     pixel.className = 'pixel white';
   };
 };
-createPixels();
+createPixelsOfBoard();
 
-function addRemoveSelected() {
+function selectAColorFromPalette() {
   color = document.getElementById('color-palette').childNodes;
   document.addEventListener('click', function () {
 
@@ -53,26 +53,31 @@ function addRemoveSelected() {
   }
   );
 };
-
-addRemoveSelected()
+selectAColorFromPalette()
 
 function fillPixelWithSelectedColor() {
-  selectedColor = document.querySelector('.selected').classList[1]
-  pixel = document.querySelector('.pixel')
+  palette = document.getElementById('color-palette').childNodes;
+  // selectedColor = document.querySelector('.selected').classList[1]
+  pixel = document.querySelector('.pixel');
+  selectedColor = '';
 
   addEventListener('click', function () {
     if (event.target.classList.contains('pixel')) {
+
+      for (i = 0; i < color.length; i += 1) {
+        if (palette[i].classList.contains('selected')) {
+          selectedColor = palette[i].classList[1];
+        }
+      }
       if (event.target.classList[1] !== selectedColor) {
-        console.log(selectedColor)
         event.target.classList.remove(event.target.classList[1]);
         event.target.classList.add(selectedColor);
       } else {
         event.target.classList.remove(event.target.classList[1]);
         event.target.classList.add('white');
-      }
+      };
     };
   }
   );
 };
 fillPixelWithSelectedColor()
-
