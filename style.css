@@ -6,8 +6,14 @@
 #title {
   margin: 20px 0 20px 20px;
 }
-#color-palette, #pixel-board {
+
+#color-palette, #pixel-board, #clear-board {
   margin-left: 20px;
+}
+
+#clear-board {
+  margin-top: 10px;
+  margin-left: 110px;
 }
 
 #pixel-board {
@@ -48,7 +54,7 @@
 }
 
 .selected {
-  box-shadow:  0px 0px 5px 2px white inset;
+  box-shadow: 0px 0px 5px 2px white inset;
 }
 
 #pixel-board {

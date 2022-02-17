@@ -5,6 +5,20 @@ function createDivColorPalette() {
 }
 createDivColorPalette();
 
+function createButtonClear() {
+  let button = document.createElement('button');
+  document.body.appendChild(button);
+  button.id = 'clear-board'
+  button.innerText = 'Limpar'
+  button.addEventListener('click', function () {
+    for (i = 0; i < 25; i += 1) {
+      document.getElementsByClassName('pixel')[i].className = 'pixel white';
+    };
+  }
+  );
+}
+createButtonClear();
+
 function createColorsOfPalette() {
   palette = document.getElementById('color-palette');
   arrayColors = ['black', 'red', 'green', 'blue'];
