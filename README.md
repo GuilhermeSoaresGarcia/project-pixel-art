@@ -1,7 +1,7 @@
 # Pixel Art Project
 
 # Contexto
-Este projeto proposto pela Trybe visava fixar conceitos referentes a manipulação do DOM e manipulação do Javascript
+Este projeto proposto pela Trybe visava fixar conceitos referentes a manipulação do DOM e uso do Javascript
 
 ## Tecnologias usadas
 
