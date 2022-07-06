@@ -11,4 +11,5 @@ Este projeto proposto pela Trybe visava fixar conceitos referentes a manipula√ß√
 
 Basta executar o arquivo index.html
 
-https://github.com/GuilhermeSoaresGarcia/project-pixel-art/blob/main/pixel.webm
+## Preview
+[pixel.webm](https://user-images.githubusercontent.com/87393731/177592994-d554a629-8f84-497b-8520-8d12a1b85159.webm)
