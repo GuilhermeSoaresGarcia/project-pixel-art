@@ -10,3 +10,5 @@ Este projeto proposto pela Trybe visava fixar conceitos referentes a manipulaç�
 ## Executando aplicação
 
 Basta executar o arquivo index.html
+
+https://github.com/GuilhermeSoaresGarcia/project-pixel-art/blob/main/pixel.webm
